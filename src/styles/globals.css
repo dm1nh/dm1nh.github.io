@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'RuneScape';
+  src: url('../assets/fonts/RuneScape-UF.woff2') format('woff2'),
+    url('../assets/fonts/RuneScape-UF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-900 font-sans text-lg text-primary-200;
+  }
+}

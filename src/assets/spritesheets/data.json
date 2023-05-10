@@ -1,0 +1,42 @@
+{
+  "ironThrone": {
+    "width": 480,
+    "height": 294,
+    "frames": 10,
+    "timecode": 200,
+    "delay": 400,
+    "scale": 3
+  },
+  "king": {
+    "width": 49,
+    "height": 87,
+    "frames": 14,
+    "timecode": 200,
+    "delay": 0,
+    "scale": 3
+  },
+  "loading": {
+    "width": 200,
+    "height": 120,
+    "frames": 13,
+    "timecode": 800,
+    "delay": 0,
+    "scale": 4
+  },
+  "citadel": {
+    "width": 200,
+    "height": 60,
+    "frames": 7,
+    "timecode": 175,
+    "delay": 0,
+    "scale": 6
+  },
+  "theWall": {
+    "width": 400,
+    "height": 200,
+    "frames": 4,
+    "timecode": 200,
+    "delay": 0,
+    "scale": 3
+  }
+}
