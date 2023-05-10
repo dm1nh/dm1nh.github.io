@@ -13,6 +13,6 @@
 
 @layer base {
   body {
-    @apply bg-primary-900 font-sans text-lg text-primary-200;
+    @apply bg-primary-900 font-sans text-sm text-primary-200 sm:text-md md:text-lg;
   }
 }

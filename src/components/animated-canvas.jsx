@@ -47,7 +47,7 @@ export default function AnimatedCanvas({
       )
 
       requestAnimationFrame(animate)
-      if (value > frames + Math.ceil(delay / timecode)) {
+      if (value > frames - 1 + Math.ceil(delay / timecode)) {
         start = Date.now()
       }
 

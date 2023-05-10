@@ -4,14 +4,14 @@ import Typing from './typing'
 
 export default function Alliance() {
   return (
-    <section className="container flex min-h-screen flex-col items-stretch justify-center gap-16 py-64">
+    <section className="container mt-64 flex min-h-screen flex-col items-stretch justify-center gap-16">
       <h3 className="text-xl uppercase">My strong allies and their words</h3>
       <StaticImage
         src={sigils}
         alt="Sigils"
         className="aspect-[210/50] border-2 border-primary-700"
       />
-      <ul className="flex flex-col items-stretch divide-y-2 divide-primary-800">
+      <ul className="flex flex-col items-stretch divide-y-2 divide-primary-800 text-center">
         <li className="flex flex-col items-center py-8">
           <div className="text-amber-300">House JavaScript of Sunspear</div>
           <div>Undebuggable, untypesafety, unhidable</div>

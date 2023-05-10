@@ -4,7 +4,7 @@ import AnimatedCanvas from './animated-canvas'
 
 export default function TheWall() {
   return (
-    <section className="container flex min-h-screen flex-col items-stretch gap-16 py-64">
+    <section className="container mt-64 flex min-h-screen flex-col items-stretch gap-16">
       <h3 className="text-xl uppercase">But the Great Winter is coming...</h3>
       <AnimatedCanvas
         id="wall"
@@ -31,8 +31,9 @@ export default function TheWall() {
           <strong className="text-blue-400">Army of the Bugs</strong>.
         </p>
         <p className="uppercase">
-          And we have to help them to protect the realms of men, by{' '}
-          <strong className="text-red-400">fixing the bugs</strong>.
+          And we&apos;ll have to help them, by{' '}
+          <strong className="text-red-400">fixing the bugs</strong> during the
+          Long Night.
         </p>
       </div>
     </section>
