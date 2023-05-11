@@ -11,6 +11,8 @@ export default function AnimatedCanvas({
   timecode,
   delay,
   scale = 1,
+  loop = false,
+  loopCount = 'Infinity',
   ...props
 }) {
   const ref = useRef(null)
@@ -26,12 +28,11 @@ export default function AnimatedCanvas({
     canvas.width = width
     canvas.height = height
 
-    let start = Date.now(),
-      end = start
-
-    const animate = () => {
-      const value = Math.floor((end - start) / timecode)
-      const frameIndex = clamp(value, 0, frames - 1)
+    let id
+    let counter = 0
+    const step = (timestamp) => {
+      const value = Math.floor(timestamp / timecode)
+      const frameIndex = clamp(value % frames, 0, frames - 1)
 
       ctx.clearRect(0, 0, width, height)
       ctx.drawImage(
@@ -46,16 +47,23 @@ export default function AnimatedCanvas({
         height
       )
 
-      requestAnimationFrame(animate)
-      if (value > frames - 1 + Math.ceil(delay / timecode)) {
-        start = Date.now()
+      id = requestAnimationFrame(step)
+
+      if (!loop && counter === 1) {
+        cancelAnimationFrame(id)
       }
 
-      end = Date.now()
+      if (loop && loopCount !== 'Infinity' && counter >= +loopCount) {
+        cancelAnimationFrame(id)
+      }
+
+      if (frameIndex >= frames - 1) counter++
     }
 
-    animate()
-  }, [src, frames, timecode, delay, width, height])
+    id = requestAnimationFrame(step)
+
+    return () => cancelAnimationFrame(id)
+  }, [src, frames, timecode, delay, width, height, loop, loopCount])
 
   return (
     <canvas

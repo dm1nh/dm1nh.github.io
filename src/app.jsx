@@ -6,13 +6,15 @@ import TheWall from './components/the-wall'
 
 function App() {
   return (
-    <main>
-      <Hero />
-      <Alliance />
-      <Citadel />
-      <TheWall />
+    <>
+      <main>
+        <Hero />
+        <Alliance />
+        <Citadel />
+        <TheWall />
+      </main>
       <LoadingScreen />
-    </main>
+    </>
   )
 }
 

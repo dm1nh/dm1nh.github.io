@@ -19,10 +19,6 @@ export default function LoadingScreen() {
     setPercentage(
       clamp(Math.ceil(100 / loadingData.frames + percentage), 0, 100)
     )
-
-    if (percentage >= 100) {
-      setLoading(false)
-    }
   }, loadingData.timecode)
 
   return createPortal(
@@ -33,6 +29,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 0, scale: 1.5 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 1.5 }}
+          onClick={() => setLoading(false)}
         >
           <div className="container flex max-w-4xl flex-col items-stretch gap-4">
             <AnimatedCanvas
@@ -41,7 +38,11 @@ export default function LoadingScreen() {
               {...loadingData}
               className="aspect-[5/3]"
             />
-            <p className="text-center">Loading ... {percentage}%</p>
+            {percentage >= 100 ? (
+              <p className="text-center">Tap the screen to start</p>
+            ) : (
+              <p className="text-center">Loading ... {percentage}%</p>
+            )}
           </div>
         </motion.div>
       )}

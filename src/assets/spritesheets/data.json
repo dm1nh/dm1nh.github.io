@@ -5,7 +5,7 @@
     "frames": 10,
     "timecode": 200,
     "delay": 400,
-    "scale": 3
+    "loop": true
   },
   "king": {
     "width": 49,
@@ -13,7 +13,7 @@
     "frames": 14,
     "timecode": 200,
     "delay": 0,
-    "scale": 3
+    "loop": true
   },
   "loading": {
     "width": 200,
@@ -21,7 +21,7 @@
     "frames": 13,
     "timecode": 800,
     "delay": 0,
-    "scale": 4
+    "loop": false
   },
   "citadel": {
     "width": 200,
@@ -29,7 +29,7 @@
     "frames": 7,
     "timecode": 175,
     "delay": 0,
-    "scale": 6
+    "loop": true
   },
   "theWall": {
     "width": 400,
@@ -37,6 +37,6 @@
     "frames": 4,
     "timecode": 200,
     "delay": 0,
-    "scale": 3
+    "loop": true
   }
 }
