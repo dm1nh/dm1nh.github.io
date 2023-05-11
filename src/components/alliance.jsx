@@ -4,7 +4,7 @@ import Typing from './typing'
 
 export default function Alliance() {
   return (
-    <section className="container mt-64 flex min-h-screen flex-col items-stretch justify-center gap-16">
+    <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
       <h3 className="text-xl uppercase">My strong allies and their words</h3>
       <StaticImage
         src={sigils}
@@ -18,7 +18,7 @@ export default function Alliance() {
         </li>
         <li className="flex flex-col items-center py-8">
           <div className="text-red-400">House HTML5 of Caterly Rock</div>
-          <div>Hear you calling me a programming language</div>
+          <div>Hear you call me a programming language</div>
         </li>
         <li className="flex flex-col items-center py-8">
           <div className="text-sky-400">House CSS3 of Storm&apos;s End</div>
@@ -26,7 +26,7 @@ export default function Alliance() {
         </li>
         <li className="flex flex-col items-center py-8">
           <div className="text-sky-300">House React of Winterfell</div>
-          <div>React 19 is comming</div>
+          <div>New version is comming</div>
         </li>
         <li className="flex flex-col items-center py-8">
           <div className="text-white">House Next of Eyrie</div>

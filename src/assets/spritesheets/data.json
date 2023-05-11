@@ -38,5 +38,13 @@
     "timecode": 200,
     "delay": 0,
     "loop": true
+  },
+  "bugs": {
+    "width": 200,
+    "height": 80,
+    "frames": 15,
+    "timecode": 200,
+    "delay": 600,
+    "loop": true
   }
 }

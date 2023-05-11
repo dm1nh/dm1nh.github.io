@@ -9,7 +9,7 @@ import Typing from './typing'
 
 export default function Hero() {
   return (
-    <section className="container flex min-h-screen flex-col items-stretch gap-2">
+    <section className="container flex flex-col items-stretch gap-2">
       <div className="relative">
         <AnimatedCanvas
           id="ironThrone"
