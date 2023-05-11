@@ -1,4 +1,5 @@
 import sigils from '../assets/spritesheets/sigils.png'
+import westeros from '../assets/spritesheets/westeros.png'
 import StaticImage from './static-image'
 import Typing from './typing'
 
@@ -41,6 +42,11 @@ export default function Alliance() {
           <div>Growing large codebase</div>
         </li>
       </ul>
+      <StaticImage
+        src={westeros}
+        alt="Westeros Map"
+        className="aspect-[80/193] w-1/3 self-center"
+      />
       <Typing
         options={{
           strings: [
