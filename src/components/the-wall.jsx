@@ -9,7 +9,9 @@ import AnimatedCanvas from './animated-canvas'
 export default function TheWall() {
   return (
     <section className="container mt-64 flex flex-col items-stretch gap-16">
-      <h3 className="text-xl uppercase">But the Great Winter is coming...</h3>
+      <h3 className="text-xl uppercase text-violet-400">
+        But the Great Winter is coming...
+      </h3>
       <AnimatedCanvas
         id="wall"
         src={theWall}

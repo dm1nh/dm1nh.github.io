@@ -6,7 +6,9 @@ import Typing from './typing'
 export default function Alliance() {
   return (
     <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
-      <h3 className="text-xl uppercase">My strong allies and their words</h3>
+      <h3 className="text-xl uppercase text-violet-400">
+        My strong allies and their words
+      </h3>
       <StaticImage
         src={sigils}
         alt="Sigils"

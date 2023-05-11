@@ -5,7 +5,9 @@ import AnimatedCanvas from './animated-canvas'
 export default function Citadel() {
   return (
     <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
-      <h3 className="text-xl uppercase">The maesters of Citadel sent ravens</h3>
+      <h3 className="text-xl uppercase text-violet-400">
+        The maesters of Citadel sent ravens
+      </h3>
       <AnimatedCanvas
         src={citadel}
         {...citadelData}
