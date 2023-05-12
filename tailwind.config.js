@@ -38,8 +38,8 @@ const config = {
         sans: ['RuneScape', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        xs: '20px',
-        sm: '24px',
+        xs: '22px',
+        sm: '28px',
         md: '32px',
         lg: '40px',
         xl: '48px',

@@ -46,5 +46,21 @@
     "timecode": 200,
     "delay": 600,
     "loop": true
+  },
+  "dragonSide": {
+    "width": 200,
+    "height": 213,
+    "frames": 4,
+    "timecode": 400,
+    "delay": 200,
+    "loop": true
+  },
+  "weapons": {
+    "width": 200,
+    "height": 73,
+    "frames": 3,
+    "timecode": 400,
+    "delay": 200,
+    "loop": true
   }
 }

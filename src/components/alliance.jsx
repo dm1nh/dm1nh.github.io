@@ -47,7 +47,7 @@ export default function Alliance() {
       <StaticImage
         src={westeros}
         alt="Westeros Map"
-        className="aspect-[80/193] w-1/3 self-center"
+        className="aspect-[80/193] w-1/3 self-center border-2 border-primary-800"
       />
       <Typing
         options={{

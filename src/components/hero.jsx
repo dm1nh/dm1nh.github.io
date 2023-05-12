@@ -27,8 +27,9 @@ export default function Hero() {
       <Typing
         options={{
           strings: [
-            'Dang Minh of House Ngo, First of his name. King of the Andals, the Rhoynars and the Firstmen. Lord of Seven Kingdoms. Protector of the realms.',
-            'He is the owner of Iron Throne. He swings a famous longsword called Blackfyer. He is the first king of House Ngo.',
+            'Dang Minh of House Ngo, First of his name. King of the Andals and the Firstmen.',
+            'Lord of Seven Kingdoms. Protector of the realms.',
+            "He is the first king of House Ngo. His sword is Blackfyer that Aegon The Conqueror's.",
           ],
           typeSpeed: 100,
           startDelay: 12000,
