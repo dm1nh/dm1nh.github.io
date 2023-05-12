@@ -14,7 +14,7 @@ export default function Blog() {
 
   return (
     <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
-      <h3 className="text-xl uppercase text-violet-400">
+      <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         Chaos is a ladder, but knowledge is power.
       </h3>
       <div className="flex flex-col divide-y-2 divide-primary-800">

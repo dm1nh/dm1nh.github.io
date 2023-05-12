@@ -12,8 +12,8 @@ function App() {
         <Hero />
         <Alliance />
         <Citadel />
-        <Blog />
         <TheWall />
+        <Blog />
       </main>
       <LoadingScreen />
     </>

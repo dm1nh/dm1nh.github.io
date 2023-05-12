@@ -5,8 +5,8 @@ import Typing from './typing'
 
 export default function Alliance() {
   return (
-    <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
-      <h3 className="text-xl uppercase text-violet-400">
+    <section className="container mt-32 flex flex-col items-stretch justify-center gap-8 sm:mt-64 sm:gap-16">
+      <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         My strong allies and their words
       </h3>
       <StaticImage
@@ -51,16 +51,13 @@ export default function Alliance() {
       />
       <Typing
         options={{
-          strings: [
-            'All hail Dang Minh the Fat King.',
-            'Long may he reign. Long may he reign.',
-          ],
+          strings: ['All hail Dang Minh the Fat King.', 'Long may he reign.'],
           typeSpeed: 100,
           cursorChar: '█',
           backDelay: 2000,
           loop: true,
         }}
-        className="max-w-screen-xl rounded-lg bg-primary-900/25 px-4 py-2 text-center text-xl leading-snug text-amber-400"
+        className="max-w-screen-xl rounded-lg bg-primary-900/25 px-4 py-2 text-center text-lg leading-snug text-amber-400 md:text-xl"
       />
     </section>
   )

@@ -9,7 +9,7 @@ import Typing from './typing'
 
 export default function Hero() {
   return (
-    <section className="container flex flex-col items-stretch gap-2">
+    <section className="container flex min-h-screen flex-col items-stretch gap-2">
       <div className="relative">
         <AnimatedCanvas
           id="ironThrone"
@@ -24,19 +24,21 @@ export default function Hero() {
           className="absolute left-1/2 top-[38%] aspect-[49/87] w-[10.2%] -translate-x-1/2"
         />
       </div>
+      <p className="px-4 py-2 text-center leading-snug">
+        Dang Minh of House Ngo, First of his name.
+      </p>
       <Typing
         options={{
           strings: [
-            'Dang Minh of House Ngo, First of his name. King of the Andals and the Firstmen.',
+            'King of the Andals and the Firstmen.',
             'Lord of Seven Kingdoms. Protector of the realms.',
-            "He is the first king of House Ngo. His sword is Blackfyer that Aegon The Conqueror's.",
+            "His sword is Blackfyer that Aegon The Conqueror's.",
           ],
           typeSpeed: 100,
-          startDelay: 12000,
           cursorChar: '█',
           backDelay: 2000,
         }}
-        className="rounded-lg bg-primary-900/25 px-4 py-2 text-center leading-snug"
+        className="px-4 py-2 text-center leading-snug"
       />
     </section>
   )

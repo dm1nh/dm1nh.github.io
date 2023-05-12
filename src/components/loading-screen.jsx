@@ -39,7 +39,9 @@ export default function LoadingScreen() {
               className="aspect-[5/3]"
             />
             {percentage >= 100 ? (
-              <p className="text-center">Tap the screen to start</p>
+              <p className="animate-pulse text-center">
+                Tap the screen to start
+              </p>
             ) : (
               <p className="text-center">Loading ... {percentage}%</p>
             )}
