@@ -5,7 +5,10 @@ import Typing from './typing'
 
 export default function Alliance() {
   return (
-    <section className="container mt-32 flex flex-col items-stretch justify-center gap-8 sm:mt-64 sm:gap-16">
+    <section
+      id="allies"
+      className="container mt-32 flex flex-col items-stretch justify-center gap-8 sm:mt-64 sm:gap-16"
+    >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         My strong allies and their words
       </h3>

@@ -13,7 +13,10 @@ export default function Blog() {
   }, [])
 
   return (
-    <section className="container mt-64 flex flex-col items-stretch justify-center gap-16">
+    <section
+      id="blog"
+      className="container mt-64 flex flex-col items-stretch justify-center gap-16"
+    >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         Chaos is a ladder, but knowledge is power.
       </h3>
@@ -27,7 +30,7 @@ export default function Blog() {
               href={`https://blog-dangminhngo.vercel.app${post.slug}`}
               target="_blank"
               rel="noreferrer"
-              className="block text-2xl delay-100 duration-300 hover:text-sky-300 hover:underline"
+              className="block text-lg delay-100 duration-300 hover:text-sky-300 hover:underline md:text-2xl"
             >
               {post.title}
             </a>

@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom'
 import { loading as loadingData } from '../assets/spritesheets/data.json'
 import loading from '../assets/spritesheets/loading.png'
 import { useDispatch, useInterval, useSelect } from '../hooks'
-import { _setLoading } from '../lib/context'
+import { _setLoading } from '../lib/actions'
 import { clamp } from '../lib/helpers'
 import AnimatedCanvas from './animated-canvas'
 

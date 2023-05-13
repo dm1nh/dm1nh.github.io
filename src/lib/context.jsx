@@ -5,6 +5,7 @@ export const DispatchContext = createContext({})
 
 const initialState = {
   isLoadingVisible: true,
+  isMobileNavVisible: false,
 }
 
 function reducer(state, { type, payload }) {
@@ -15,16 +16,15 @@ function reducer(state, { type, payload }) {
         isLoadingVisible: payload,
       }
     }
+    case 'SET_MOBILE_NAV_VISIBLE': {
+      return {
+        ...state,
+        isMobileNavVisible: payload,
+      }
+    }
     default: {
       return state
     }
-  }
-}
-
-export function _setLoading(value) {
-  return {
-    type: 'SET_LOADING',
-    payload: value,
   }
 }
 
