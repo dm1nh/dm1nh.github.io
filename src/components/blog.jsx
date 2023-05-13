@@ -30,7 +30,7 @@ export default function Blog() {
               href={`https://blog-dangminhngo.vercel.app${post.slug}`}
               target="_blank"
               rel="noreferrer"
-              className="block text-lg delay-100 duration-300 hover:text-sky-300 hover:underline md:text-2xl"
+              className="block text-md delay-100 duration-300 hover:text-sky-300 hover:underline sm:text-lg md:text-xl"
             >
               {post.title}
             </a>

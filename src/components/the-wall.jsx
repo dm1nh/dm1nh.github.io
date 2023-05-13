@@ -71,7 +71,7 @@ export default function TheWall() {
         id="dragon-side"
         src={dragonSide}
         {...dragonSideData}
-        className="aspect-[200/213] w-1/2 self-center"
+        className="aspect-[200/213] w-full self-center sm:w-2/3 md:w-1/2"
       />
     </section>
   )

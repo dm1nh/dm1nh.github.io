@@ -13,33 +13,41 @@ export default function MobileNav() {
   const setMobileNavVisible = (value) => dispatch(_setMobileNavVisible(value))
 
   return createPortal(
-    <AnimatePresence>
-      {isMobileNavVisible && (
-        <motion.div
-          className="fixed inset-0 block bg-primary-950 sm:hidden"
-          initial={{ opacity: 0, scale: 1.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 1.5 }}
-        >
-          <div className="border-b-2 border-primary-900">
-            <div className="container flex items-center justify-between py-2 sm:py-6">
-              <StaticImage
-                src={logo}
-                alt="Logo"
-                className="aspect-[1/1] w-10"
-              />
-              <button
-                className="px-4 py-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100"
-                onClick={() => setMobileNavVisible(false)}
-              >
-                Close
-              </button>
+    <>
+      <button
+        className="fixed right-4 top-2 block rounded bg-primary-900/60 p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100 sm:top-4 sm:hidden"
+        onClick={() => setMobileNavVisible(true)}
+      >
+        Menu
+      </button>
+      <AnimatePresence>
+        {isMobileNavVisible && (
+          <motion.div
+            className="fixed inset-0 block bg-primary-950 sm:hidden"
+            initial={{ opacity: 0, scale: 1.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.5 }}
+          >
+            <div className="border-b-2 border-primary-900">
+              <div className="container flex h-16 items-center justify-between sm:h-20">
+                <StaticImage
+                  src={logo}
+                  alt="Logo"
+                  className="aspect-[1/1] w-10"
+                />
+                <button
+                  className="p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100"
+                  onClick={() => setMobileNavVisible(false)}
+                >
+                  Close
+                </button>
+              </div>
             </div>
-          </div>
-          <Nav />
-        </motion.div>
-      )}
-    </AnimatePresence>,
+            <Nav />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>,
     document.getElementById('mobile-nav')
   )
 }
