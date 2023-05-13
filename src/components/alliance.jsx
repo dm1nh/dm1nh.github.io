@@ -7,7 +7,7 @@ export default function Alliance() {
   return (
     <section
       id="allies"
-      className="container mt-32 flex scroll-mt-12 flex-col items-stretch justify-center gap-8 sm:mt-64 sm:gap-16"
+      className="container mt-32 flex scroll-mt-24 flex-col items-stretch justify-center gap-8 sm:mt-64 sm:scroll-mt-4 sm:gap-16"
     >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         My strong allies and their words
