@@ -1,4 +1,5 @@
 import letter from '../assets/spritesheets/letter.png'
+import siteConfig from '../config/site'
 import StaticImage from './static-image'
 
 export default function Letter() {
@@ -26,28 +27,28 @@ export default function Letter() {
         <li>
           Email:{' '}
           <a
-            href={`mailto:dangminhngo.dev@gmail.com`}
+            href={`mailto:${siteConfig.links.email.href}`}
             className="transition-colors delay-100 duration-200 hover:text-white hover:underline"
           >
-            dangminhngo.dev@gmail.com
+            {siteConfig.links.email.title}
           </a>
         </li>
         <li>
           Github:{' '}
           <a
-            href={`https://github.com/dangminhngo`}
+            href={siteConfig.links.github.href}
             className="transition-colors delay-100 duration-200 hover:text-white hover:underline"
           >
-            dangminhngo
+            {siteConfig.links.github.title}
           </a>
         </li>
         <li>
           Twitter:{' '}
           <a
-            href={`https://twitter.com/dangminhngo`}
+            href={siteConfig.links.twitter.href}
             className="transition-colors delay-100 duration-200 hover:text-white hover:underline"
           >
-            @dangminhngo
+            {siteConfig.links.twitter.title}
           </a>
         </li>
       </ul>
