@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { createPortal } from 'react-dom'
 
@@ -11,6 +12,18 @@ export default function MobileNav() {
   const dispatch = useDispatch()
   const { isMobileNavVisible } = useSelect()
   const setMobileNavVisible = (value) => dispatch(_setMobileNavVisible(value))
+
+  const originalStyleRef = useRef(
+    window.getComputedStyle(document.body).overflow
+  )
+
+  useEffect(() => {
+    if (isMobileNavVisible) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = originalStyleRef.current
+    }
+  }, [isMobileNavVisible])
 
   return createPortal(
     <>

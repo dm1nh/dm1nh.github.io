@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      className="container mt-64 flex flex-col items-stretch justify-center gap-16"
+      className="container mt-32 flex scroll-mt-12 flex-col items-stretch justify-center gap-16 sm:mt-64"
     >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         Chaos is a ladder, but knowledge is power.

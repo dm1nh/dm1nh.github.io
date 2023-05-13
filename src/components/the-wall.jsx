@@ -14,7 +14,7 @@ export default function TheWall() {
   return (
     <section
       id="winter"
-      className="container mt-64 flex flex-col items-stretch gap-24"
+      className="container mt-48 flex scroll-mt-12 flex-col items-stretch gap-16 sm:mt-64"
     >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         But the Great Winter is coming...

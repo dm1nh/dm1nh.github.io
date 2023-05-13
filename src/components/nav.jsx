@@ -7,7 +7,7 @@ export default function Nav() {
 
   return (
     <nav className="text-md">
-      <ul className="flex flex-col items-stretch gap-0 sm:flex-row sm:items-center sm:gap-12">
+      <ul className="flex flex-col items-stretch gap-0 sm:flex-row sm:items-center sm:gap-8">
         {items.map(({ title, href }) => (
           <li key={title}>
             <a
@@ -40,5 +40,9 @@ const items = [
   {
     title: 'Blog',
     href: '#blog',
+  },
+  {
+    title: 'Send ravens',
+    href: '#ravens',
   },
 ]

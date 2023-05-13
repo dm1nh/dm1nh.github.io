@@ -60,7 +60,7 @@
     "height": 73,
     "frames": 3,
     "timecode": 400,
-    "delay": 200,
+    "delay": 1200,
     "loop": true
   }
 }

@@ -24,7 +24,7 @@ export default function Hero() {
           className="absolute left-1/2 top-[38%] aspect-[49/87] w-[10.2%] -translate-x-1/2"
         />
       </div>
-      <p className="px-4 py-2 text-center leading-snug">
+      <p className="text-center leading-snug">
         Dang Minh of House Ngo, First of his name.
       </p>
       <Typing
@@ -38,7 +38,7 @@ export default function Hero() {
           cursorChar: '█',
           backDelay: 2000,
         }}
-        className="px-4 py-2 text-center leading-snug"
+        className="text-center leading-snug"
       />
     </section>
   )
