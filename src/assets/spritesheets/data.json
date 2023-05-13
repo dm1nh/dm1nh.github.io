@@ -9,8 +9,8 @@
   },
   "king": {
     "width": 49,
-    "height": 87,
-    "frames": 14,
+    "height": 91,
+    "frames": 13,
     "timecode": 200,
     "delay": 0,
     "loop": true
