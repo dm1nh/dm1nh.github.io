@@ -1,3 +1,4 @@
+import dragon from '../assets/spritesheets/dragon.png'
 import letter from '../assets/spritesheets/letter.png'
 import siteConfig from '../config/site'
 import StaticImage from './static-image'
@@ -6,7 +7,7 @@ export default function Letter() {
   return (
     <section
       id="ravens"
-      className="container mt-48 flex scroll-mt-24 flex-col items-stretch gap-16 sm:mt-64 sm:scroll-mt-4"
+      className="container mb-32 mt-48 flex scroll-mt-24 flex-col items-stretch gap-16 sm:mt-64 sm:scroll-mt-4"
     >
       <h3 className="text-md uppercase text-violet-400 sm:text-lg md:text-xl">
         Send me ravens
@@ -52,6 +53,12 @@ export default function Letter() {
           </a>
         </li>
       </ul>
+      <p>Send me ravens or I send you dragons.</p>
+      <StaticImage
+        src={dragon}
+        alt="Dragon Head"
+        className="aspect-[1/1] w-full self-center sm:w-2/3 md:w-1/2"
+      />
     </section>
   )
 }
