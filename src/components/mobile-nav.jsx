@@ -28,7 +28,7 @@ export default function MobileNav() {
   return createPortal(
     <>
       <button
-        className="fixed right-4 top-2 block rounded bg-primary-900/60 p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100 sm:top-4 sm:hidden"
+        className="fixed right-4 top-2 block rounded bg-primary-900/60 p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100 sm:top-4 md:hidden"
         onClick={() => setMobileNavVisible(true)}
       >
         Menu
@@ -36,7 +36,7 @@ export default function MobileNav() {
       <AnimatePresence>
         {isMobileNavVisible && (
           <motion.div
-            className="fixed inset-0 block bg-primary-950 sm:hidden"
+            className="fixed inset-0 block bg-primary-950 md:hidden"
             initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.5 }}
