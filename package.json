@@ -16,7 +16,8 @@
     "framer-motion": "^10.12.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typed.js": "^2.0.16"
+    "typed.js": "^2.0.16",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",

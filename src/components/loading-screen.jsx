@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { createPortal } from 'react-dom'
+import useSound from 'use-sound'
 
+import gotTheme from '../assets/sounds/got.mp3'
 import { loading as loadingData } from '../assets/spritesheets/data.json'
 import loading from '../assets/spritesheets/loading.png'
 import { useDispatch, useInterval, useSelect } from '../hooks'
@@ -10,6 +12,7 @@ import { clamp } from '../lib/helpers'
 import AnimatedCanvas from './animated-canvas'
 
 export default function LoadingScreen() {
+  const [play] = useSound(gotTheme)
   const [percentage, setPercentage] = useState(0)
   const { isLoadingVisible } = useSelect()
   const dispatch = useDispatch()
@@ -29,7 +32,10 @@ export default function LoadingScreen() {
           initial={{ opacity: 0, scale: 1.5 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 1.5 }}
-          onClick={() => setLoading(false)}
+          onClick={() => {
+            play()
+            setLoading(false)
+          }}
         >
           <div className="container flex max-w-4xl flex-col items-stretch gap-4">
             <AnimatedCanvas
