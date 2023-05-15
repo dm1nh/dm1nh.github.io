@@ -28,7 +28,7 @@ export default function MobileNav() {
   return createPortal(
     <>
       <button
-        className="fixed right-4 top-2 block rounded bg-primary-900/60 p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100 sm:top-4 md:hidden"
+        className="fixed right-4 top-3 block rounded bg-primary-900/60 px-4 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100 sm:top-4 md:hidden"
         onClick={() => setMobileNavVisible(true)}
       >
         Menu
@@ -49,7 +49,7 @@ export default function MobileNav() {
                   className="aspect-[1/1] w-10"
                 />
                 <button
-                  className="p-2 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100"
+                  className="px-4 uppercase text-primary-300 transition-colors duration-200 hover:text-primary-100"
                   onClick={() => setMobileNavVisible(false)}
                 >
                   Close

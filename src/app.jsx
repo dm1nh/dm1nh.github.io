@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 
 import Alliance from './components/alliance'
 import Blog from './components/blog'
+import Buttons from './components/buttons'
 import Citadel from './components/citadel'
 import Header from './components/header'
 import Hero from './components/hero'
@@ -15,18 +16,21 @@ function App() {
     document.title = siteConfig.title
   }, [])
   return (
-    <div className="flex flex-col items-stretch">
-      <Header />
-      <main>
-        <Hero />
-        <Alliance />
-        <Citadel />
-        <TheWall />
-        <Blog />
-        <Letter />
-      </main>
-      <LoadingScreen />
-    </div>
+    <>
+      <div className="flex flex-col items-stretch">
+        <Header />
+        <main>
+          <Hero />
+          <Alliance />
+          <Citadel />
+          <TheWall />
+          <Blog />
+          <Letter />
+        </main>
+        <LoadingScreen />
+      </div>
+      <Buttons />
+    </>
   )
 }
 

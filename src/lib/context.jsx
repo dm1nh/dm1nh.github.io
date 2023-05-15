@@ -1,7 +1,11 @@
 import { createContext, useReducer } from 'react'
 
+import got from '../assets/sounds/got.mp3'
+import { useSound } from '../hooks'
+
 export const StateContext = createContext({})
 export const DispatchContext = createContext({})
+export const SoundContext = createContext({})
 
 const initialState = {
   isLoadingVisible: true,
@@ -30,11 +34,12 @@ function reducer(state, { type, payload }) {
 
 export default function AppProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState)
+  const sound = useSound(got, { loop: true })
 
   return (
     <StateContext.Provider value={state}>
       <DispatchContext.Provider value={dispatch}>
-        {children}
+        <SoundContext.Provider value={sound}>{children}</SoundContext.Provider>
       </DispatchContext.Provider>
     </StateContext.Provider>
   )

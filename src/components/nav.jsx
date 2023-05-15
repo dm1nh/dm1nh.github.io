@@ -12,7 +12,7 @@ export default function Nav() {
           <li key={title}>
             <a
               href={href}
-              className="block px-4 py-4 text-center text-xl transition-colors delay-100 duration-200 hover:text-violet-400 md:px-0 md:py-0 md:text-left md:text-md"
+              className="block p-4 text-center text-xl transition-colors delay-100 duration-200 hover:text-violet-400 md:p-0 md:text-left md:text-md"
               onClick={() => setMobileNavVisible(false)}
             >
               {title}
