@@ -30,9 +30,8 @@ export default function Hero() {
       <Typing
         options={{
           strings: [
-            'King of the Andals and the Firstmen.',
-            'Lord of Seven Kingdoms. Protector of the realms.',
-            "His sword is Blackfyer that Aegon The Conqueror's.",
+            'King of the Andals, and the Rhoynars, and the First Men.',
+            'Lord of the Seven Kingdoms. Protector of the Realm.',
           ],
           typeSpeed: 100,
           cursorChar: '█',
