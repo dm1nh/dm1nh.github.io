@@ -41,7 +41,7 @@ export default function TheWall() {
         </strong>
         and their leaders,{' '}
         <strong className="text-sky-300">the Software Testers</strong>. They
-        have found down a large of the Bugs what is known as{' '}
+        have found out a large of the Bugs what is known as{' '}
         <strong className="text-blue-400">Army of the Bugs</strong>.
       </p>
       <AnimatedCanvas
